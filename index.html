@@ -1,127 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-	
 <head>
-    <title>Pizza Ordering Form</title>
+    <meta charset="UTF-8">
+    <title>John Doe - Resume</title>
+    <!-- Optional: link to CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	
+
 <header>
-    <h1>Pizza Order Form</h1>
+    <h1>John Doe</h1>
+    <p>Email: <a href="mailto:jdoe@ucf.edu">jdoe@ucf.edu</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
 </header>
 
 <main>
 
-<form>
-	<fieldset>
+    <!-- Professional Objective -->
+    <section>
+        <h2>Professional Objective</h2>
+        <p>Brief statement about your career goals, interests, or professional focus.</p>
+    </section>
 
-        <h2>Contact Information</h2>
+    <!-- Education -->
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>
+                Bachelor of Science in Computer Science, University of Central Florida (UCF)<br>
+                Expected Graduation: May 2027
+            </li>
+        </ul>
+    </section>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+    <!-- Work Experience (optional) -->
+    <section>
+        <h2>Relevant Work Experience</h2>
+        <ul>
+            <li>
+                <strong>Job Title</strong> - Company Name<br>
+                Dates Employed: Month Year – Month Year<br>
+                Responsibilities/achievements:
+                <ul>
+                    <li>Detail 1</li>
+                    <li>Detail 2</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required><br>
+    <!-- Projects -->
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Project Name</strong> – Short description of the project and technologies used.
+            </li>
+            <li>
+                <strong>Another Project</strong> – Description of project.
+            </li>
+        </ul>
+    </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+    <!-- Skills -->
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: HTML, CSS, JavaScript, Python</li>
+            <li>Tools: Git, GitHub, VS Code</li>
+            <li>Other Skills: Problem-solving, Teamwork</li>
+        </ul>
+    </section>
 
-
- 
-        <h2>Select Pizza Size</h2>
-
-        <label for="size">Pizza Size:</label>
-        <select id="size" name="size" required>
-            <option value="">--Select Size--</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="xlarge">XLarge</option>
-        </select><br><br>
-
-        <h2>Select Sauce:</h2>
-        <input type="radio" id="marinara" name="sauce" value="marinara" required>
-        <label for="marinara">Marinara</label><br>
-
-        <input type="radio" id="ranch" name="sauce" value="ranch">
-        <label for="ranch">Ranch</label><br>
-
-        <input type="radio" id="no-sauce" name="sauce" value="no-sauce">
-        <label for="no-sauce">No Sauce</label><br><br>
-
-        <h2>Select Toppings:</h2>
-
-        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
-        <label for="pepperoni">Pepperoni</label>
-
-	    <input type="checkbox" id="sausage" name="toppings" value="sausage">
-        <label for="sausage">Sausage</label><br>
-
-        <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
-        <label for="mushrooms">Mushrooms</label>
-
-        <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
-        <label for="pineapple">Pineapple</label><br>
-
-        <input type="checkbox" id="peppers" name="toppings" value="peppers">
-        <label for="peppers">Green Peppers</label>
-
-	    <input type="checkbox" id="onions" name="toppings" value="onions">
-        <label for="onions">Onions</label><br>
-
-	    <h2>Additional Instructions</h2>
-        <textarea id="instructions" name="instructions" rows="4" cols="50" placeholder="Add instructions"></textarea><br>
-
-        <input type="submit" value="Submit Order"><br><br>
-
-	
-      </fieldset>
-</form>
-	
-<section>
-    <table style="border: 1px solid black; border-collapse: collapse;">
-        <caption>List of My Favorite Games</caption>
-        <thead>
-            <tr>
-                <th style="border: 1px solid black;">Developer</th>
-                <th style="border: 1px solid black;">Title</th>
-                <th style="border: 1px solid black;">Year</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="3" style="border: 1px solid black;">Infinite Fall</td>
-                <td style="border: 1px solid black;">Night In The Woods</td>
-                <td style="border: 1px solid black;">2017</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black;">Vigil: The Longest Night</td>
-                <td style="border: 1px solid black;">2020</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black;">Lost Constellation</td>
-                <td style="border: 1px solid black;">2014</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black;">ConcernedApe</td>
-                <td style="border: 1px solid black;">Stardew Valley</td>
-                <td style="border: 1px solid black;">2016</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black;">Naughty Dog</td>
-                <td style="border: 1px solid black;">The Last of Us Part II</td>
-                <td style="border: 1px solid black;">2020</td>
-            </tr>
-            <tr>
-                <td colspan="3" style="border: 1px solid black;">Count: 4</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-	
 </main>
+
+<footer>
+    <p>&copy; 2026 John Doe</p>
+</footer>
 
 </body>
 </html>
-
-
