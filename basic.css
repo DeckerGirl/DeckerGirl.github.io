@@ -1,0 +1,112 @@
+/* =========================
+   General Page Styling
+========================= */
+body {
+    background-color: #f2f2f2;        /* soft gray background */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   Headers
+========================= */
+h1 {
+    text-align: center;               /* top header aligned correctly */
+    font-size: 3rem;                  /* larger main header */
+    margin: 30px 0 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 30px 0 15px 40px;
+}
+
+/* =========================
+   Paragraphs
+========================= */
+p {
+    margin: 15px 40px;
+    line-height: 1.6;
+}
+
+/* 2nd paragraph special formatting */
+p:nth-of-type(2) {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #555;
+    line-height: 1.8;
+    background-color: #ffffff;
+}
+
+/* 4th and 5th paragraph colors */
+p:nth-of-type(4) {
+    color: #0a6ea8;
+}
+
+p:nth-of-type(5) {
+    color: #8b1c1c;
+}
+
+/* =========================
+   Links
+========================= */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* W3Schools link different color */
+a[href*="w3schools"] {
+    color: #2aa62a;
+    font-weight: bold;
+}
+
+/* =========================
+   Lists
+========================= */
+ol {
+    margin: 20px 60px;
+    list-style-type: decimal-leading-zero; /* two-digit numbering */
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* List item links (different from w3schools link) */
+li a {
+    color: #b34700;
+}
+
+/* =========================
+   Tables
+========================= */
+table {
+    border-collapse: collapse;   /* overlapping borders */
+    width: 80%;
+    margin: 30px auto;
+}
+
+th, td {
+    border: 2px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table header styling */
+th {
+    background-color: #444;
+    color: #ffffff;
+}
+
+/* Table cell styling */
+td {
+    background-color: #e6e6e6;
+}
