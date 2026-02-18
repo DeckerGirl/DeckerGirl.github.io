@@ -1,38 +1,34 @@
-// COUNTER VARIABLE
+// COUNTER
 let counter = 0;
 
 
-// Increase Counter
+// INCREASE COUNTER
 function tickUp()
 {
     counter++;
-
     document.getElementById("counter").textContent = counter;
 }
 
 
-// Decrease Counter
+// DECREASE COUNTER
 function tickDown()
 {
     counter--;
-
     document.getElementById("counter").textContent = counter;
 }
 
 
-
-// SIMPLE FOR LOOP
+// FOR LOOP
 function runForLoop()
 {
-
-    let result = "";
+    let output = "";
 
     for (let i = 0; i <= counter; i++)
     {
-        result += i + " ";
+        output += i + " ";
     }
 
-    document.getElementById("forLoopResult").textContent = result;
+    document.getElementById("forLoopResult").textContent = output;
 }
 
 
@@ -40,23 +36,17 @@ function runForLoop()
 // SHOW ODD NUMBERS
 function showOddNumbers()
 {
+    let output = "";
 
-    let result = "";
-
-    let i = 1;
-
-    while (i <= counter)
+    for (let i = 1; i <= counter; i++)
     {
-
         if (i % 2 !== 0)
         {
-            result += i + " ";
+            output += i + " ";
         }
-
-        i++;
     }
 
-    document.getElementById("oddNumberResult").textContent = result;
+    document.getElementById("oddNumberResult").textContent = output;
 }
 
 
@@ -64,7 +54,6 @@ function showOddNumbers()
 // ARRAY OF MULTIPLES OF 5 IN REVERSE
 function addMultiplesToArray()
 {
-
     let arr = [];
 
     for (let i = 5; i <= counter; i += 5)
@@ -81,10 +70,9 @@ function addMultiplesToArray()
 
 
 
-// PRINT CAR OBJECT
+// PRINT CAR OBJECT FROM FORM
 function printCarObject()
 {
-
     let car = {
 
         cType: document.getElementById("carType").value,
@@ -101,11 +89,9 @@ function printCarObject()
 
 
 
-
 // LOAD CAR OBJECT INTO FORM
 function loadCar(num)
 {
-
     let selectedCar;
 
     if (num === 1)
@@ -118,7 +104,6 @@ function loadCar(num)
         selectedCar = carObject3;
 
 
-
     document.getElementById("carType").value = selectedCar.cType;
 
     document.getElementById("carMPG").value = selectedCar.cMPG;
@@ -128,22 +113,17 @@ function loadCar(num)
 
 
 
-// CHANGE PARAGRAPH COLOR
+// CHANGE STYLE COLOR
 function changeColor(num)
 {
-
     let paragraph = document.getElementById("styleParagraph");
-
 
     if (num === 1)
         paragraph.style.color = "red";
 
-
     if (num === 2)
         paragraph.style.color = "green";
 
-
     if (num === 3)
         paragraph.style.color = "blue";
-
 }
